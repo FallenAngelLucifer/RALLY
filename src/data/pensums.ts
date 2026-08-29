@@ -16,7 +16,7 @@ export interface CareerPensum {
   id: string;
   careerTitle: string;
   institution: string;
-  type: 'INATEC' | 'CNU';
+  type: 'INATEC' | 'SETEC';
   totalDuration: string;
   totalSubjects: number;
   overallPracticalPercentage: number;
@@ -217,7 +217,7 @@ export const SAMPLE_PENSUMS: Record<string, CareerPensum> = {
     id: 'unan_agro_mat',
     careerTitle: 'Ingeniería Agronómica',
     institution: 'FAREM-Matagalpa / Estelí / UNA',
-    type: 'CNU',
+    type: 'SETEC',
     totalDuration: '5 Años (10 Semestres)',
     totalSubjects: 45,
     overallPracticalPercentage: 55,

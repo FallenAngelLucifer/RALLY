@@ -29,7 +29,7 @@ export const ModuloFamilia: React.FC<ModuloFamiliaProps> = ({
     {
       myth: '“Para ser un profesional exitoso obligatoriamente hay que mudarse a la capital.”',
       reality: 'Falso. Existen centros tecnológicos de INATEC y recintos universitarios FAREM / UNICAM (Universidad en el Campo) en los 17 departamentos y regiones autónomas, formando profesionales adaptados al desarrollo productivo de su propia tierra.',
-      source: 'Consejo Nacional de Universidades (CNU)'
+      source: 'SETEC'
     },
     {
       myth: '“Existen carreras exclusivas para varones o para mujeres.”',
@@ -39,7 +39,7 @@ export const ModuloFamilia: React.FC<ModuloFamiliaProps> = ({
     {
       myth: '“Estudiar una carrera técnica te cierra las puertas de la universidad.”',
       reality: 'Todo lo contrario. La Ruta Progresiva permite graduarte de un técnico en 1.5 años, comenzar a trabajar y generar tus propios ingresos, y luego continuar tus estudios universitarios en modalidad sabatina o virtual.',
-      source: 'Articulación MINED - INATEC - CNU'
+      source: 'Articulación MINED - INATEC - SETEC'
     }
   ];
 
@@ -197,7 +197,7 @@ export const ModuloFamilia: React.FC<ModuloFamiliaProps> = ({
           </div>
 
           <div className="bg-white/10 p-3 rounded-xl border border-white/10 space-y-1">
-            <strong className="text-white block font-extrabold">2. Gratuidad Universitaria CNU</strong>
+            <strong className="text-white block font-extrabold">2. Gratuidad Universitaria SETEC</strong>
             <p className="text-[11px] leading-relaxed">
               Educación universitaria pública gratuita en UNAN-Managua, UNAN-León, UNI, UNA, URACCAN y sedes departamentales FAREM.
             </p>

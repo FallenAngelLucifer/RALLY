@@ -42,7 +42,7 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
   const modules: { id: AppModule; label: string; number: string; desc: string; icon: React.ElementType; isHot?: boolean }[] = [
     { id: 'conocerme', label: 'Conóceme', number: '1', desc: 'Mapa y Árbol de Decisiones', icon: Compass },
     { id: 'descubrir', label: 'Descubrir', number: '2', desc: 'Mapeo de Carreras y Afinidad', icon: Search },
-    { id: 'comparar', label: 'Comparar', number: '3', desc: 'INATEC vs CNU vs Privadas', icon: Scale },
+    { id: 'comparar', label: 'Comparar', number: '3', desc: 'INATEC vs SETEC vs Privadas', icon: Scale },
     { id: 'entender', label: 'Entender', number: '4', desc: 'Pensums y Proyectos Prácticos', icon: BookOpen },
     { id: 'experimentar', label: 'Experimentar', number: '5', desc: 'Micro-Reels Vocacionales', icon: Video, isHot: true },
     { id: 'conectar', label: 'Conectar', number: '6', desc: 'Comunidad Q&A y Mentores', icon: Users },
@@ -173,7 +173,7 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
           )}
 
           <div className="text-[10px] text-center text-slate-400 pt-1 font-semibold">
-            MINED · INATEC · CNU · Nicaragua 2026
+            MINED · INATEC · SETEC · Nicaragua 2026
           </div>
         </div>
       </div>

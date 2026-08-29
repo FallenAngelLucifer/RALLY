@@ -117,7 +117,7 @@ export const NavbarApp: React.FC<NavbarAppProps> = ({
                   </span>
                 </div>
                 <span className="text-[10px] text-slate-500 font-bold -mt-0.5">
-                  Orientación Vocacional · MINED · INATEC · CNU
+                  Orientación Vocacional · MINED · INATEC · SETEC
                 </span>
               </div>
             </button>

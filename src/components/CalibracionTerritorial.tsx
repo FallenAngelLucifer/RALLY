@@ -86,7 +86,7 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
             <RumboLogo variant="full" size="md" />
           </div>
           <p className="text-[11px] sm:text-sm text-blue-100 max-w-xl font-medium leading-tight sm:leading-relaxed">
-            Plataforma Integral de Orientación Vocacional (MINED · INATEC · CNU)
+            Plataforma Integral de Orientación Vocacional (MINED · INATEC · SETEC)
           </p>
           <div className="inline-flex items-center gap-1.5 px-3 py-0.5 sm:py-1 rounded-full bg-[#00C2FF]/20 text-[#00F0FF] text-[9px] sm:text-[10px] font-black uppercase tracking-wider border border-[#00C2FF]/40">
             <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Paso 1: Calibra tu Territorio

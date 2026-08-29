@@ -13,7 +13,7 @@ export interface CareerReel {
   authorRole: string;
   authorAvatar: string;
   institution: string;
-  institutionType: 'INATEC' | 'CNU' | 'Profesional';
+  institutionType: 'INATEC' | 'SETEC' | 'Profesional';
   department: string;
   careerTitle: string;
   careerId: string;
@@ -79,7 +79,7 @@ export const CAREER_REELS: CareerReel[] = [
     authorRole: 'Ingeniera Agrónoma',
     authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
     institution: 'FAREM-Matagalpa (UNAN)',
-    institutionType: 'CNU',
+    institutionType: 'SETEC',
     department: 'Matagalpa',
     careerTitle: 'Ingeniería Agronómica',
     careerId: 'unan_agro_mat',
@@ -147,7 +147,7 @@ export const CAREER_REELS: CareerReel[] = [
     authorRole: 'Licenciada en Enfermería',
     authorAvatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80',
     institution: 'UNAN-León (Facultad de Ciencias Médicas)',
-    institutionType: 'CNU',
+    institutionType: 'SETEC',
     department: 'León',
     careerTitle: 'Licenciatura en Enfermería',
     careerId: 'unan_enf_leon',

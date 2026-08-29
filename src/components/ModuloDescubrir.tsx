@@ -93,7 +93,7 @@ export const ModuloDescubrir: React.FC<ModuloDescubrirProps> = ({
             >
               <option value="Todos">Todos los centros</option>
               <option value="INATEC">Educación Técnica (INATEC)</option>
-              <option value="Pública">Universidad Pública (CNU)</option>
+              <option value="Pública">Universidad Pública (SETEC)</option>
               <option value="Privada">Universidad Privada</option>
             </select>
           </div>

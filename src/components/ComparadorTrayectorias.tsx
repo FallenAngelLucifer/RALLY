@@ -151,7 +151,7 @@ export const ComparadorTrayectorias: React.FC<ComparadorTrayectoriasProps> = ({
           </div>
         )}
 
-        {/* ── Ruta 2: Educación Universitaria (CNU / Públicas) ── */}
+        {/* ── Ruta 2: Educación Universitaria (SETEC / Públicas) ── */}
         {(activeTab === 'todos' || activeTab === 'universitaria') && (
           <div className="rounded-2xl border-2 border-emerald-200 bg-emerald-50/40 p-5 flex flex-col justify-between gap-5 relative overflow-hidden">
             <div className="space-y-4">
@@ -166,7 +166,7 @@ export const ComparadorTrayectorias: React.FC<ComparadorTrayectoriasProps> = ({
 
               <div>
                 <h4 className="text-base font-black text-slate-900">
-                  Educación Universitaria (CNU)
+                  Educación Universitaria (SETEC)
                 </h4>
                 <p className="text-xs font-bold text-emerald-700 mt-0.5">
                   Licenciatura / Ingeniería / Medicina

@@ -590,13 +590,13 @@ export const LEVEL_4_NODE: DecisionNode = {
     {
       id: 'prioridad_universitaria',
       title: 'Carrera Universitaria de Grado (4 a 5 años)',
-      subtitle: 'Educación Universitaria CNU: Fundamentación teórica, investigación profunda y titulación de licenciatura o ingeniería.',
+      subtitle: 'Educación Universitaria SETEC: Fundamentación teórica, investigación profunda y titulación de licenciatura o ingeniería.',
       description: 'Deseo dedicar varios años al estudio universitario a tiempo completo para aspirar a cargos de diseño, investigación o gerencia.',
       iconName: 'GraduationCap',
       preferredTrajectory: 'universitaria',
       badge: 'Profundización y Grado',
       scores: { I: 2, S: 1 },
-      tags: ['universidad_cnu', 'licenciatura_ingenieria']
+      tags: ['universidad_setec', 'licenciatura_ingenieria']
     },
     {
       id: 'prioridad_progresiva',

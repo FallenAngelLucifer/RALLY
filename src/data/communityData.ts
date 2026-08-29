@@ -2,7 +2,7 @@ export interface CommunityAnswer {
   id: string;
   authorName: string;
   authorRole: string;
-  authorBadge: 'Egresado INATEC' | 'Docente CNU' | 'Profesional Activo' | 'Estudiante Universitario';
+  authorBadge: 'Egresado INATEC' | 'Docente SETEC' | 'Profesional Activo' | 'Estudiante Universitario';
   authorAvatar: string;
   text: string;
   likes: number;
@@ -56,7 +56,7 @@ export const COMMUNITY_THREADS: CommunityThread[] = [
         id: 'ans-2',
         authorName: 'Ing. Sofía Alemán',
         authorRole: 'Docente de Sistemas UNAN',
-        authorBadge: 'Docente CNU',
+        authorBadge: 'Docente SETEC',
         authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
         text: '¡Exacto! Y recuerda la Ruta Progresiva: puedes terminar el técnico del INATEC, comenzar a laborar en una empresa y luego ingresar a la UNAN en modalidad Sabatina para sacar tu Ingeniería mientras ganas tu propio dinero.',
         likes: 29,
@@ -73,7 +73,7 @@ export const COMMUNITY_THREADS: CommunityThread[] = [
     authorSchool: 'Colegio Pablo Hurtado (Juigalpa)',
     authorAvatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80',
     category: 'Agro y Recursos',
-    tags: ['Veterinaria', 'Chontales', 'Ganadería', 'INATECvsCNU'],
+    tags: ['Veterinaria', 'Chontales', 'Ganadería', 'INATECvsSETEC'],
     upvotes: 35,
     views: 410,
     timeAgo: 'hace 2 días',

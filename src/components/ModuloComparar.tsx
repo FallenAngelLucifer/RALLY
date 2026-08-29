@@ -16,42 +16,42 @@ export const ModuloComparar: React.FC<{ department: string }> = ({ department })
     {
       feature: 'Duración Promedio',
       inatec: '1.5 a 2 Años (3 - 4 Semestres)',
-      cnu: '4 a 5 Años (8 - 10 Semestres)',
+      setec: '4 a 5 Años (8 - 10 Semestres)',
       privada: '4 a 5 Años (Cuatrimestral o Semestral)',
       progresiva: '1.5 años Técnico + 3 años Sabatino'
     },
     {
       feature: 'Inversión y Aranceles',
       inatec: '100% Gratuito (Cero Matrícula)',
-      cnu: 'Matrícula y Aranceles Gratuitos',
+      setec: 'Matrícula y Aranceles Gratuitos',
       privada: '$40 - $120 / mes + Matrícula',
       progresiva: 'Autofinanciado con salario del técnico'
     },
     {
       feature: 'Metodología de Aprendizaje',
       inatec: '70% Práctica en Talleres / 30% Aula',
-      cnu: '50% Teoría e Investigación / 50% Práctica',
+      setec: '50% Teoría e Investigación / 50% Práctica',
       privada: '60% Aula / 40% Práctica',
       progresiva: 'Práctica laboral real + Aula ejecutiva'
     },
     {
       feature: 'Inserción Laboral y Empleo',
       inatec: 'Muy Rápida (Pasantías en 2do semestre)',
-      cnu: 'Mediano Plazo (Prácticas profesionales)',
+      setec: 'Mediano Plazo (Prácticas profesionales)',
       privada: 'Mediano Plazo',
       progresiva: 'Inmediata desde el 2do año'
     },
     {
       feature: 'Requisitos de Ingreso',
       inatec: 'Diploma de 5to año o 3er año aprobado + Cédula',
-      cnu: 'Título de Bachiller + Prematrícula en línea',
+      setec: 'Título de Bachiller + Prematrícula en línea',
       privada: 'Título de Bachiller + Pago de Matrícula',
       progresiva: 'Título de Bachiller'
     },
     {
       feature: 'Potencial de Emprendimiento',
       inatec: 'Muy Alto (Oficios y talleres técnicos propios)',
-      cnu: 'Alto (Firmas consultoras y empresas de gran escala)',
+      setec: 'Alto (Firmas consultoras y empresas de gran escala)',
       privada: 'Medio',
       progresiva: 'Máximo (Capital propio + Conocimiento técnico)'
     }
@@ -121,7 +121,7 @@ export const ModuloComparar: React.FC<{ department: string }> = ({ department })
           </div>
         </div>
 
-        {/* CNU */}
+        {/* SETEC */}
         <div className="bg-white rounded-3xl border-2 border-emerald-200 p-6 shadow-sm space-y-4 relative overflow-hidden">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-emerald-600 text-white">
@@ -130,7 +130,7 @@ export const ModuloComparar: React.FC<{ department: string }> = ({ department })
             <GraduationCap className="w-5 h-5 text-emerald-600" />
           </div>
           <div>
-            <h3 className="text-lg font-black text-slate-900">Universidades CNU</h3>
+            <h3 className="text-lg font-black text-slate-900">Universidades SETEC</h3>
             <p className="text-xs font-bold text-emerald-700 mt-0.5">UNAN, UNI, UNA, FAREM, UNICAM</p>
           </div>
           <p className="text-xs text-slate-600 leading-relaxed">
@@ -179,7 +179,7 @@ export const ModuloComparar: React.FC<{ department: string }> = ({ department })
               <tr className="border-b border-slate-200 bg-slate-100/60 font-black text-slate-700">
                 <th className="p-4 w-1/4">Criterio de Decisión</th>
                 <th className="p-4 w-1/4 text-blue-900 bg-blue-50/50">Técnico INATEC</th>
-                <th className="p-4 w-1/4 text-emerald-900 bg-emerald-50/50">Universidad CNU</th>
+                <th className="p-4 w-1/4 text-emerald-900 bg-emerald-50/50">Universidad SETEC</th>
                 <th className="p-4 w-1/4 text-purple-900 bg-purple-50/50">Ruta Progresiva</th>
               </tr>
             </thead>
@@ -193,7 +193,7 @@ export const ModuloComparar: React.FC<{ department: string }> = ({ department })
                     {row.inatec}
                   </td>
                   <td className="p-4 font-medium text-slate-700 bg-emerald-50/20">
-                    {row.cnu}
+                    {row.setec}
                   </td>
                   <td className="p-4 font-medium text-purple-900 bg-purple-50/20 font-semibold">
                     {row.progresiva}

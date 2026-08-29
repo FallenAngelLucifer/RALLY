@@ -48,7 +48,7 @@ export const ModuloDecidir: React.FC<ModuloDecidirProps> = ({
     },
     {
       step: '2',
-      title: 'Paso 2: Prematrícula Oficial (MINED / INATEC / CNU)',
+      title: 'Paso 2: Prematrícula Oficial (MINED / INATEC / SETEC)',
       desc: 'Revisa las fechas oficiales de matrícula gratuita para centros INATEC y universidades públicas en tu departamento.',
       status: 'Próximamente'
     },

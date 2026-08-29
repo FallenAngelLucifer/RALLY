@@ -98,7 +98,7 @@ export const ModuloConectar: React.FC<{ department: string }> = ({ department })
             Preguntas Reales a Egresados y Docentes
           </h2>
           <p className="text-xs text-blue-100 max-w-xl">
-            Resuelve tus dudas directamente con estudiantes avanzados, docentes del MINED/CNU y técnicos del INATEC que ya están trabajando en Nicaragua.
+            Resuelve tus dudas directamente con estudiantes avanzados, docentes del MINED/SETEC y técnicos del INATEC que ya están trabajando en Nicaragua.
           </p>
         </div>
 

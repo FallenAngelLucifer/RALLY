@@ -65,7 +65,7 @@ export class PDFGeneratorService {
       doc.setFont('helvetica', 'normal');
       doc.setFontSize(8);
       doc.setTextColor(100, 116, 139);
-      doc.text('RUMBO · Tu camino, tu vocación, tu futuro | Sistema Educativo Nacional (MINED · INATEC · CNU)', margin, pageHeight - 8);
+      doc.text('RUMBO · Tu camino, tu vocación, tu futuro | Sistema Educativo Nacional (MINED · INATEC · SETEC)', margin, pageHeight - 8);
       const pageCount = doc.getNumberOfPages();
       doc.text(`Pág. ${pageCount}`, 210 - margin - 8, pageHeight - 8);
     };
@@ -198,7 +198,7 @@ export class PDFGeneratorService {
 
     const trajectories = [
       { name: 'Ruta Técnica (INATEC)', time: '1.5 - 2 Años', focus: '70% Práctica / Talleres reales', cost: '100% Gratuito en centros nacionales', fit: 'Rápida inserción laboral y talleres propios.' },
-      { name: 'Ruta Universitaria (CNU)', time: '4 - 5 Años', focus: 'Investigación teórica y gestión', cost: 'Matrícula pública gratuita + becas', fit: 'Titulación de grado y diseño de proyectos.' },
+      { name: 'Ruta Universitaria (SETEC)', time: '4 - 5 Años', focus: 'Investigación teórica y gestión', cost: 'Matrícula pública gratuita + becas', fit: 'Titulación de grado y diseño de proyectos.' },
       { name: 'Ruta Progresiva (Combinada)', time: 'Flexible', focus: 'Técnico corto + Universidad Sabatina', cost: 'Autofinanciado con empleo propio', fit: 'Autonomía y resiliencia para la familia.' }
     ];
 
@@ -270,7 +270,7 @@ export class PDFGeneratorService {
     doc.setFontSize(7.5);
     doc.setTextColor(136, 19, 55);
     doc.text('1. ¿Resolviendo qué tipo de problemas se siente más útil y motivado/a nuestro hijo/a?', margin + 4, y + 12);
-    doc.text('2. ¿Cuál es la realidad financiera del hogar y qué opciones de centros INATEC / CNU tenemos cerca?', margin + 4, y + 17);
+    doc.text('2. ¿Cuál es la realidad financiera del hogar y qué opciones de centros INATEC / SETEC tenemos cerca?', margin + 4, y + 17);
     doc.text('3. ¿Cómo podemos apoyarle en horarios y estudio sin imponer una carrera por presión externa?', margin + 4, y + 22);
 
     doc.setFont('helvetica', 'bold');

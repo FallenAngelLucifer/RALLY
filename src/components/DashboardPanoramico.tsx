@@ -47,74 +47,74 @@ const ICON_MAP: Record<string, React.ElementType> = {
 };
 
 // Nearest campus per department
-const NEAREST_CAMPUS: Record<string, { inatec: { name: string; address: string; focus: string }; cnu: { name: string; address: string; focus: string } }> = {
+const NEAREST_CAMPUS: Record<string, { inatec: { name: string; address: string; focus: string }; setec: { name: string; address: string; focus: string } }> = {
   'Managua': {
     inatec: { name: 'Centro Tecnológico Manuel Olivares', address: 'Frente a Plaza Inter, Managua', focus: 'Computación, Programación, Administración, Contabilidad' },
-    cnu: { name: 'UNAN-Managua / UNI / UNA', address: 'Rotonda Universitaria, Managua', focus: 'Ingenierías, Medicina, Ciencias Económicas, Humanidades' }
+    setec: { name: 'UNAN-Managua / UNI / UNA', address: 'Rotonda Universitaria, Managua', focus: 'Ingenierías, Medicina, Ciencias Económicas, Humanidades' }
   },
   'León': {
     inatec: { name: 'Centro Tecnológico Juan de Dios Muñoz', address: 'Costado oeste de la Iglesia La Merced, León', focus: 'Administración, Hotelería, Computación, Electricidad' },
-    cnu: { name: 'UNAN-León', address: 'Costado Norte del Parque Central, León', focus: 'Medicina, Derecho, Química Farmacéutica, Odontología' }
+    setec: { name: 'UNAN-León', address: 'Costado Norte del Parque Central, León', focus: 'Medicina, Derecho, Química Farmacéutica, Odontología' }
   },
   'Estelí': {
     inatec: { name: 'Centro Tecnológico de Estelí', address: 'Salida sur de Estelí, Km 148', focus: 'Mecánica, Electricidad, Construcción, Agroindustria' },
-    cnu: { name: 'FAREM-Estelí (UNAN)', address: 'Km 167 Carretera Panamericana, Estelí', focus: 'Agronomía, Ciencias Económicas, Educación, Sistemas' }
+    setec: { name: 'FAREM-Estelí (UNAN)', address: 'Km 167 Carretera Panamericana, Estelí', focus: 'Agronomía, Ciencias Económicas, Educación, Sistemas' }
   },
   'Matagalpa': {
     inatec: { name: 'Centro Tecnológico Monimbó Heroico / Matagalpa', address: 'Matagalpa, salida a Jinotega', focus: 'Agropecuaria, Zootecnia, Café, Administración' },
-    cnu: { name: 'FAREM-Matagalpa (UNAN)', address: 'Frente al estadio Chale Solís, Matagalpa', focus: 'Agropecuaria, Enfermería, Pedagogía, Sistemas' }
+    setec: { name: 'FAREM-Matagalpa (UNAN)', address: 'Frente al estadio Chale Solís, Matagalpa', focus: 'Agropecuaria, Enfermería, Pedagogía, Sistemas' }
   },
   'Chinandega': {
     inatec: { name: 'Centro Tecnológico Padre Teodoro Kint', address: 'El Viejo, Chinandega', focus: 'Mecánica Industrial, Electricidad, Soldadura, Motores' },
-    cnu: { name: 'FAREM-Chinandega (UNAN)', address: 'Casco urbano, Chinandega', focus: 'Ingeniería Química, Administración, Agroindustria' }
+    setec: { name: 'FAREM-Chinandega (UNAN)', address: 'Casco urbano, Chinandega', focus: 'Ingeniería Química, Administración, Agroindustria' }
   },
   'Masaya': {
     inatec: { name: 'Centro Tecnológico de Masaya', address: 'Barrio San Miguel, Masaya', focus: 'Artesanías, Cuero y Calzado, Confección, Computación' },
-    cnu: { name: 'Universidad Nacional Multidisciplinaria Ricardo Morales Avilés', address: 'Masaya', focus: 'Educación, Administración, Salud' }
+    setec: { name: 'Universidad Nacional Multidisciplinaria Ricardo Morales Avilés', address: 'Masaya', focus: 'Educación, Administración, Salud' }
   },
   'Granada': {
     inatec: { name: 'Centro Tecnológico Pedro Aráuz Palacios', address: 'Frente al Parque Central, Granada', focus: 'Hotelería, Turismo Sostenible, Gastronomía, Idiomas' },
-    cnu: { name: 'UNAN-Managua / Sede Granada', address: 'Granada', focus: 'Ciencias de la Educación, Administración' }
+    setec: { name: 'UNAN-Managua / Sede Granada', address: 'Granada', focus: 'Ciencias de la Educación, Administración' }
   },
   'Carazo': {
     inatec: { name: 'Centro Tecnológico Ernst Thalmann', address: 'Jinotepe, Carazo', focus: 'Mecánica Automotriz, Electricidad, Topografía' },
-    cnu: { name: 'FAREM-Carazo (UNAN)', address: 'Jinotepe, Carazo', focus: 'Ciencias Económicas, Educación, Ingeniería en Sistemas' }
+    setec: { name: 'FAREM-Carazo (UNAN)', address: 'Jinotepe, Carazo', focus: 'Ciencias Económicas, Educación, Ingeniería en Sistemas' }
   },
   'Rivas': {
     inatec: { name: 'Centro Tecnológico Gaspar García Laviana', address: 'Rivas, casco urbano', focus: 'Hotelería, Turismo, Pesca, Mecánica' },
-    cnu: { name: 'UNAN-Managua / Extensión Rivas', address: 'Rivas', focus: 'Turismo Sostenible, Administración, Educación' }
+    setec: { name: 'UNAN-Managua / Extensión Rivas', address: 'Rivas', focus: 'Turismo Sostenible, Administración, Educación' }
   },
   'Chontales': {
     inatec: { name: 'Centro Tecnológico Germán Pomares Ordóñez', address: 'Juigalpa, Chontales', focus: 'Veterinaria, Zootecnia, Lácteos, Agropecuaria' },
-    cnu: { name: 'FAREM-Chontales (UNAN)', address: 'Juigalpa, Chontales', focus: 'Zootecnia, Medicina Veterinaria, Agronomía, Derecho' }
+    setec: { name: 'FAREM-Chontales (UNAN)', address: 'Juigalpa, Chontales', focus: 'Zootecnia, Medicina Veterinaria, Agronomía, Derecho' }
   },
   'Boaco': {
     inatec: { name: 'Centro Tecnológico de Boaco', address: 'Boaco, casco urbano', focus: 'Agropecuaria, Mecánica, Electricidad, Computación' },
-    cnu: { name: 'FAREM-Chontales / Extensión Boaco', address: 'Boaco', focus: 'Educación, Agropecuaria, Administración' }
+    setec: { name: 'FAREM-Chontales / Extensión Boaco', address: 'Boaco', focus: 'Educación, Agropecuaria, Administración' }
   },
   'Jinotega': {
     inatec: { name: 'Centro Tecnológico de Jinotega', address: 'Jinotega, salida a San Rafael del Norte', focus: 'Caficultora, Catación de Café, Riego, Agroindustria' },
-    cnu: { name: 'FAREM-Matagalpa / Extensión Jinotega', address: 'Jinotega', focus: 'Agronomía, Educación, Sistemas' }
+    setec: { name: 'FAREM-Matagalpa / Extensión Jinotega', address: 'Jinotega', focus: 'Agronomía, Educación, Sistemas' }
   },
   'Madriz': {
     inatec: { name: 'Centro Tecnológico de Somoto', address: 'Somoto, Madriz', focus: 'Construcción, Electricidad, Computación, Gastronomía' },
-    cnu: { name: 'FAREM-Estelí / Extensión Somoto', address: 'Somoto', focus: 'Educación, Agropecuaria, Administración' }
+    setec: { name: 'FAREM-Estelí / Extensión Somoto', address: 'Somoto', focus: 'Educación, Agropecuaria, Administración' }
   },
   'Nueva Segovia': {
     inatec: { name: 'Centro Tecnológico de Ocotal', address: 'Ocotal, Nueva Segovia', focus: 'Mecánica, Electricidad, Agroindustria del Café, Madera' },
-    cnu: { name: 'FAREM-Estelí / Extensión Ocotal', address: 'Ocotal', focus: 'Agronomía, Educación, Administración' }
+    setec: { name: 'FAREM-Estelí / Extensión Ocotal', address: 'Ocotal', focus: 'Agronomía, Educación, Administración' }
   },
   'Río San Juan': {
     inatec: { name: 'Centro Tecnológico de San Carlos', address: 'San Carlos, Río San Juan', focus: 'Pesca, Guía Turístico, Mecánica Náutica, Computación' },
-    cnu: { name: 'UNAN-Managua / Sede San Carlos', address: 'San Carlos', focus: 'Recursos Naturales, Turismo Sostenible, Educación' }
+    setec: { name: 'UNAN-Managua / Sede San Carlos', address: 'San Carlos', focus: 'Recursos Naturales, Turismo Sostenible, Educación' }
   },
   'RACCS': {
     inatec: { name: 'Centro Tecnológico de Bluefields', address: 'Bluefields, RACCS', focus: 'Pesca y Acuicultura, Mecánica Naval, Hotelería, Computación' },
-    cnu: { name: 'URACCAN / BICU Bluefields', address: 'Bluefields, RACCS', focus: 'Recursos Naturales, Enfermería Intercultural, Sociología' }
+    setec: { name: 'URACCAN / BICU Bluefields', address: 'Bluefields, RACCS', focus: 'Recursos Naturales, Enfermería Intercultural, Sociología' }
   },
   'RACCN': {
     inatec: { name: 'Centro Tecnológico Héroes y Mártires de Puerto Cabezas', address: 'Bilwi (Puerto Cabezas), RACCN', focus: 'Mecánica Naval, Electricidad, Computación, Carpintería' },
-    cnu: { name: 'URACCAN / BICU Las Minas / Bilwi', address: 'Siuna / Bilwi', focus: 'Agroforestería, Enfermería Intercultural, Administración' }
+    setec: { name: 'URACCAN / BICU Las Minas / Bilwi', address: 'Siuna / Bilwi', focus: 'Agroforestería, Enfermería Intercultural, Administración' }
   }
 };
 
@@ -265,7 +265,7 @@ export const DashboardPanoramico: React.FC<DashboardPanoramicoProps> = ({
             }`}
           >
             <Scale className="w-4 h-4" />
-            <span>2. Comparador Imparcial (INATEC vs CNU)</span>
+            <span>2. Comparador Imparcial (INATEC vs SETEC)</span>
           </button>
 
           <button
@@ -462,7 +462,7 @@ export const DashboardPanoramico: React.FC<DashboardPanoramicoProps> = ({
                       {branch.universityOptions.length > 0 && (
                         <div className="space-y-1 pt-1">
                           <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 block">
-                            🎓 Ruta Universitaria (CNU):
+                            🎓 Ruta Universitaria (SETEC):
                           </span>
                           <ul className="space-y-0.5 pl-3 border-l-2 border-emerald-400">
                             {branch.universityOptions.map((opt, i) => (
@@ -524,18 +524,18 @@ export const DashboardPanoramico: React.FC<DashboardPanoramicoProps> = ({
               </div>
             </div>
 
-            {/* CNU University Campus */}
+            {/* SETEC University Campus */}
             <div className="bg-emerald-900 text-white rounded-3xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
               <div className="space-y-2">
                 <span className="text-[10px] font-black uppercase tracking-widest text-emerald-300">
-                  Recinto Universitario CNU en {department}
+                  Recinto Universitario SETEC en {department}
                 </span>
-                <h4 className="text-lg font-black text-white">{nearest.cnu.name}</h4>
-                <p className="text-xs text-emerald-200">{nearest.cnu.address}</p>
+                <h4 className="text-lg font-black text-white">{nearest.setec.name}</h4>
+                <p className="text-xs text-emerald-200">{nearest.setec.address}</p>
               </div>
               <div className="pt-3 border-t border-emerald-800/80 text-xs text-emerald-100">
                 <strong className="text-white block font-bold mb-0.5">Facultades destacadas:</strong>
-                {nearest.cnu.focus}
+                {nearest.setec.focus}
               </div>
             </div>
           </div>
@@ -548,7 +548,7 @@ export const DashboardPanoramico: React.FC<DashboardPanoramicoProps> = ({
                 Catálogo de Carreras y Centros en {department}
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Oferta académica oficial de INATEC y Universidades del CNU ordenadas por afinidad con tus decisiones.
+                Oferta académica oficial de INATEC y Universidades de SETEC ordenadas por afinidad con tus decisiones.
               </p>
             </div>
 

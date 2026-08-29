@@ -18,13 +18,13 @@ const PRESET_QUERIES: { query: string; answer: string; source: string }[] = [
   },
   {
     query: '¿Qué es la Ruta Progresiva y cómo funciona?',
-    answer: 'La **Ruta Progresiva** te permite estudiar primero un Técnico en INATEC (1.5 a 2 años) para insertarte al mercado laboral rápidamente y generar ingresos. Luego, puedes continuar tus estudios en universidades públicas del **CNU** en modalidad Sabatina o Virtual para obtener tu título de Licenciatura o Ingeniería convalidando asignaturas.',
-    source: 'Marco Nacional de Articulación Educativa MINED - INATEC - CNU'
+    answer: 'La **Ruta Progresiva** te permite estudiar primero un Técnico en INATEC (1.5 a 2 años) para insertarte al mercado laboral rápidamente y generar ingresos. Luego, puedes continuar tus estudios en universidades públicas de **SETEC** en modalidad Sabatina o Virtual para obtener tu título de Licenciatura o Ingeniería convalidando asignaturas.',
+    source: 'Marco Nacional de Articulación Educativa MINED - INATEC - SETEC'
   },
   {
-    query: '¿Hay gratuidad en las universidades públicas del CNU?',
-    answer: 'Sí. Las universidades miembros del Consejo Nacional de Universidades (UNAN-Managua, UNAN-León, UNI, UNA, URACCAN, etc.) cuentan con política de gratuidad de matrícula y aranceles en carreras regulares y del programa UNICAM (Universidad en el Campo).',
-    source: 'Consejo Nacional de Universidades (CNU)'
+    query: '¿Hay gratuidad en las universidades públicas de SETEC?',
+    answer: 'Sí. Las universidades miembros de SETEC (UNAN-Managua, UNAN-León, UNI, UNA, URACCAN, etc.) cuentan con política de gratuidad de matrícula y aranceles en carreras regulares y del programa UNICAM (Universidad en el Campo).',
+    source: 'SETEC'
   },
   {
     query: '¿Qué carreras técnicas tienen mayor demanda en el Norte (Matagalpa/Jinotega/Estelí)?',
@@ -41,8 +41,8 @@ export const AsistenteIAMock: React.FC<{ department: string; onExploreCareer?: (
     {
       id: 'm1',
       sender: 'bot',
-      text: `¡Hola! Soy **VocaciónIA**, tu asesor oficial antialucinaciones con arquitectura RAG. Estoy conectado a las bases de datos de MINED, INATEC y CNU para darte respuestas 100% verificadas sobre carreras, sedes en ${department} y becas. ¿En qué te puedo orientar hoy?`,
-      source: 'MINED / INATEC / CNU Base Verificada',
+      text: `¡Hola! Soy **VocaciónIA**, tu asesor oficial antialucinaciones con arquitectura RAG. Estoy conectado a las bases de datos de MINED, INATEC y SETEC para darte respuestas 100% verificadas sobre carreras, sedes en ${department} y becas. ¿En qué te puedo orientar hoy?`,
+      source: 'MINED / INATEC / SETEC Base Verificada',
       time: 'Justo ahora'
     }
   ]);
@@ -80,7 +80,7 @@ export const AsistenteIAMock: React.FC<{ department: string; onExploreCareer?: (
         botResponseText = matched.answer;
         botSource = matched.source;
       } else {
-        botResponseText = `Para **${department}**, contamos con oferta activa en centros tecnológicos del **INATEC** y sedes universitarias del **CNU**. Puedes consultar los requisitos de ingreso y turnos (presencial, sabatino y virtual) en la sección **COMPARAR** o **ENTENDER** de esta app.`;
+        botResponseText = `Para **${department}**, contamos con oferta activa en centros tecnológicos del **INATEC** y sedes universitarias de **SETEC**. Puedes consultar los requisitos de ingreso y turnos (presencial, sabatino y virtual) en la sección **COMPARAR** o **ENTENDER** de esta app.`;
         botSource = `Sede Territorial ${department} - Registro Educativo 2025`;
       }
 
@@ -132,7 +132,7 @@ export const AsistenteIAMock: React.FC<{ department: string; onExploreCareer?: (
                     <ShieldCheck className="w-2.5 h-2.5" /> Antialucinaciones RAG
                   </span>
                 </div>
-                <p className="text-[10px] text-blue-200">Datos Oficiales MINED · INATEC · CNU</p>
+                <p className="text-[10px] text-blue-200">Datos Oficiales MINED · INATEC · SETEC</p>
               </div>
             </div>
             <button
