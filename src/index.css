@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rumbo-navy: #001B48;
+  --color-rumbo-navy-dark: #001233;
+  --color-rumbo-blue: #0057FF;
+  --color-rumbo-blue-dark: #0044CC;
+  --color-rumbo-cyan: #00C2FF;
+  --color-rumbo-neon: #00F0FF;
+  --color-rumbo-ice: #F0F8FF;
+}
+
+/* ── Typography ──────────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    --font-body:    'Inter',         system-ui, -apple-system, sans-serif;
+  }
+
+  html, body {
+    font-family: var(--font-body);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    @apply bg-slate-100 text-slate-900;
+  }
+
+  button, select, input, textarea {
+    font-family: var(--font-body);
+    font-weight: 500;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+  }
+
+  strong, b {
+    font-weight: 700;
+  }
+}
+
+/* ── Scrollbars ──────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Mobile Safe Area ───────────────────────────────────────────────────────── */
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 4.5rem);
+}
+
+@media (orientation: landscape) and (max-height: 550px) {
+  .landscape-compact {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+/* ── Animations ──────────────────────────────────────────────────────────────── */
+@keyframes loading-bar {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up { animation: slide-up 0.3s ease both; }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="128" fill="#0f172a"/>
+  <!-- Graduation Cap -->
+  <path d="M256 120 L400 200 L256 280 L112 200 Z" fill="#2563eb" stroke="#ffffff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M160 227 L160 300 C160 340, 352 340, 352 300 L352 227" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M368 205 L368 320" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="368" cy="328" r="12" fill="#ffffff"/>
+  <!-- Compass Needle overlaying in center -->
+  <polygon points="256,180 270,200 256,220 242,200" fill="#ffffff"/>
+  <circle cx="256" cy="200" r="4" fill="#0f172a"/>
+</svg>
