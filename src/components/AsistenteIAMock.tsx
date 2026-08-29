@@ -104,12 +104,12 @@ export const AsistenteIAMock: React.FC<{ department: string; onExploreCareer?: (
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-22 md:bottom-6 right-4 sm:right-6 z-40 bg-gradient-to-r from-[#001B48] via-[#0048BA] to-[#00C2FF] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl flex items-center gap-2.5 transition-all transform hover:scale-105 border border-[#00C2FF]/40 ring-2 ring-[#00C2FF]/20"
+        className="fixed bottom-14 md:bottom-6 right-3 sm:right-6 z-40 bg-gradient-to-r from-[#001B48] via-[#0048BA] to-[#00C2FF] text-white p-2.5 sm:px-4 sm:py-3 rounded-full shadow-2xl flex items-center gap-2 transition-all transform hover:scale-105 border border-[#00C2FF]/40 ring-1 ring-[#00C2FF]/20"
       >
         <div className="relative">
-          <Bot className="w-5 h-5 text-[#00F0FF]" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-[#00F0FF] rounded-full animate-ping" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-[#00F0FF] rounded-full" />
+          <Bot className="w-4.5 h-4.5 text-[#00F0FF]" />
+          <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#00F0FF] rounded-full animate-ping" />
+          <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#00F0FF] rounded-full" />
         </div>
         <span className="hidden sm:inline text-xs font-black tracking-wide text-white">
           RUMBO IA (RAG)

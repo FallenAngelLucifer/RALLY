@@ -75,42 +75,42 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
   if (loading) return <Loader />;
 
   return (
-    <div className="w-full flex flex-col gap-5 pb-6 max-w-4xl mx-auto">
+    <div className="w-full flex flex-col gap-3 sm:gap-5 pb-6 max-w-4xl mx-auto">
       {/* ── RUMBO Brand Header Banner ── */}
-      <div className="bg-gradient-to-br from-[#001B48] via-[#002B6D] to-[#001B48] rounded-3xl p-6 sm:p-7 text-center shadow-lg border border-[#0057FF]/30 relative overflow-hidden">
+      <div className="bg-gradient-to-br from-[#001B48] via-[#002B6D] to-[#001B48] rounded-2xl sm:rounded-3xl p-4 sm:p-7 text-center shadow-lg border border-[#0057FF]/30 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#00C2FF]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#0057FF]/15 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 flex flex-col items-center space-y-3">
-          <div className="bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-2xl shadow-md border border-white/20">
-            <RumboLogo variant="full" size="lg" />
+        <div className="relative z-10 flex flex-col items-center space-y-2">
+          <div className="bg-white/95 backdrop-blur-md px-4 py-2 sm:px-5 sm:py-2.5 rounded-2xl shadow-md border border-white/20">
+            <RumboLogo variant="full" size="md" />
           </div>
-          <p className="text-xs sm:text-sm text-blue-100 max-w-xl font-medium leading-relaxed">
-            Plataforma Integral de Orientación Vocacional · Sistema Educativo Nacional (MINED · INATEC · CNU)
+          <p className="text-[11px] sm:text-sm text-blue-100 max-w-xl font-medium leading-tight sm:leading-relaxed">
+            Plataforma Integral de Orientación Vocacional (MINED · INATEC · CNU)
           </p>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00C2FF]/20 text-[#00F0FF] text-[10px] font-black uppercase tracking-wider border border-[#00C2FF]/40">
-            <Sparkles className="w-3.5 h-3.5" /> Paso 1: Calibra tu Territorio
+          <div className="inline-flex items-center gap-1.5 px-3 py-0.5 sm:py-1 rounded-full bg-[#00C2FF]/20 text-[#00F0FF] text-[9px] sm:text-[10px] font-black uppercase tracking-wider border border-[#00C2FF]/40">
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Paso 1: Calibra tu Territorio
           </div>
         </div>
       </div>
 
       {/* ── Map card ── */}
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-        <div className="px-5 py-3 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div className="px-4 py-2 sm:px-5 sm:py-3 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
           <span
-            className="text-[11px] text-slate-500 uppercase tracking-widest font-black"
+            className="text-[10px] sm:text-[11px] text-slate-500 uppercase tracking-widest font-black"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Mapa de Nicaragua
           </span>
-          <span className="text-xs font-extrabold text-[#0057FF] flex items-center gap-1">
-            <MapPin className="w-3.5 h-3.5" />
+          <span className="text-[11px] sm:text-xs font-extrabold text-[#0057FF] flex items-center gap-1">
+            <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
             {hoveredDept || (selectedDept ? `${selectedDept}` : 'Toca tu departamento')}
           </span>
         </div>
 
-        <div className="p-4 bg-gradient-to-b from-[#F0F8FF] to-white">
-          <div className="w-full max-w-xl mx-auto" style={{ aspectRatio: '595/529' }}>
+        <div className="p-2 sm:p-4 bg-gradient-to-b from-[#F0F8FF] to-white">
+          <div className="w-full max-w-[240px] sm:max-w-xl mx-auto" style={{ aspectRatio: '595/529' }}>
             <svg
               viewBox="35 0 565 535"
               preserveAspectRatio="xMidYMid meet"
@@ -154,26 +154,26 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
       </div>
 
       {/* ── Form ── */}
-      <form onSubmit={handleSubmit} className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden p-6 space-y-4">
-        <div className="space-y-1 border-b border-slate-100 pb-3">
-          <h3 className="text-sm font-black text-[#001B48] uppercase tracking-wider">
+      <form onSubmit={handleSubmit} className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm overflow-hidden p-4 sm:p-6 space-y-3 sm:space-y-4">
+        <div className="space-y-1 border-b border-slate-100 pb-2.5">
+          <h3 className="text-xs sm:text-sm font-black text-[#001B48] uppercase tracking-wider">
             Confirma tu Ubicación
           </h3>
-          <p className="text-xs text-slate-500">
+          <p className="text-[11px] sm:text-xs text-slate-500">
             Los resultados de carreras de INATEC y Universidades se adaptarán a la oferta disponible en tu departamento.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {/* Department */}
-          <div className="space-y-1.5">
-            <label className="block text-xs font-black text-slate-700 uppercase tracking-wider">
+          <div className="space-y-1">
+            <label className="block text-[10px] sm:text-xs font-black text-slate-700 uppercase tracking-wider">
               Departamento
             </label>
             <select
               value={selectedDept}
               onChange={(e) => handleDeptSelect(e.target.value)}
-              className="w-full h-12 px-3 text-xs font-bold border-2 border-slate-200 rounded-2xl bg-slate-50 text-slate-800 focus:outline-none focus:border-[#0057FF] transition"
+              className="w-full h-11 sm:h-12 px-3 text-xs font-bold border-2 border-slate-200 rounded-xl sm:rounded-2xl bg-slate-50 text-slate-800 focus:outline-none focus:border-[#0057FF] transition"
             >
               <option value="">Selecciona tu departamento...</option>
               {NICARAGUA_PATHS.map((d) => (
@@ -183,8 +183,8 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
           </div>
 
           {/* Municipality */}
-          <div className="space-y-1.5">
-            <label className="block text-xs font-black text-slate-700 uppercase tracking-wider">
+          <div className="space-y-1">
+            <label className="block text-[10px] sm:text-xs font-black text-slate-700 uppercase tracking-wider">
               Municipio
             </label>
             <select
@@ -192,7 +192,7 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
               onChange={(e) => setSelectedMuni(e.target.value)}
               disabled={!selectedDept || municipalities.length === 0}
               required
-              className="w-full h-12 px-3 text-xs font-bold border-2 border-slate-200 rounded-2xl bg-slate-50 text-slate-800 focus:outline-none focus:border-[#0057FF] disabled:bg-slate-100 disabled:text-slate-400 transition"
+              className="w-full h-11 sm:h-12 px-3 text-xs font-bold border-2 border-slate-200 rounded-xl sm:rounded-2xl bg-slate-50 text-slate-800 focus:outline-none focus:border-[#0057FF] disabled:bg-slate-100 disabled:text-slate-400 transition"
             >
               <option value="">{selectedDept ? 'Selecciona tu municipio...' : 'Primero elige departamento'}</option>
               {municipalities.map((m) => (
@@ -206,7 +206,7 @@ export const CalibracionTerritorial: React.FC<CalibracionTerritorialProps> = ({ 
         <button
           type="submit"
           disabled={!selectedDept || !selectedMuni}
-          className="w-full h-12 bg-gradient-to-r from-[#0048BA] via-[#0057FF] to-[#00C2FF] hover:opacity-95 active:scale-[0.99] disabled:bg-slate-200 disabled:from-slate-200 disabled:to-slate-200 disabled:text-slate-400 text-white text-xs sm:text-sm font-black rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md shadow-[#0057FF]/25 disabled:shadow-none"
+          className="w-full h-11 sm:h-12 bg-gradient-to-r from-[#0048BA] via-[#0057FF] to-[#00C2FF] hover:opacity-95 active:scale-[0.99] disabled:bg-slate-200 disabled:from-slate-200 disabled:to-slate-200 disabled:text-slate-400 text-white text-xs sm:text-sm font-black rounded-xl sm:rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md shadow-[#0057FF]/25 disabled:shadow-none"
         >
           <span>Iniciar Evaluación Vocacional</span>
           <ArrowRight className="w-4 h-4" />

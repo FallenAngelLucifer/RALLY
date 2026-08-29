@@ -138,7 +138,7 @@ function App() {
       />
 
       {/* Main Container */}
-      <main className="flex-1 w-full max-w-6xl mx-auto p-3 sm:p-6 lg:p-8">
+      <main className="flex-1 w-full max-w-6xl mx-auto p-3 sm:p-6 lg:p-8 pb-32 sm:pb-8">
         {/* ── MODULE 1: CONOCERME ── */}
         {activeModule === 'conocerme' && (
           <div className="space-y-6">
